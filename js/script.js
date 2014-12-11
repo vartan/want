@@ -4,7 +4,7 @@ document.body.onload = function() {
 		for(var i in products) {
 			var product = products[i];
 			var url = "http://www.amazon.com/dp/"+product.ASIN+"/?tag=vartannet46ne-20"
-			container.append("<tr><td><a href=\""+url+"\"><div class=\"lazy\" src=\"http://images.amazon.com/images/P/"+product.ASIN+".01._SCMZZZZZZZ_.jpg\"/></div></a></td><td><a href=\""+url+"\">"+product.title+"</a></td><td>"+product.price+"</td></tr>")
+			container.append("<tr><td><a href=\""+url+"\" target=\"_blank\"><div class=\"lazy\" src=\"http://images.amazon.com/images/P/"+product.ASIN+".01._SCMZZZZZZZ_.jpg\"/></div></a></td><td><a href=\""+url+"\" target=\"_blank\">"+product.title+"</a></td><td>"+product.price+"</td></tr>")
 		}
 		
 	});
